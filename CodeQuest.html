@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeQuest Quiz</title>
+    <link rel="stylesheet" href="CodeQuest.css" />
+  </head>
+  <body>
+    <main>
+      <div id="quiz-container" class="quiz-container">
+        <!-- Start Screen -->
+        <section id="start-section" class="start-section">
+          <h1>Welcome to "Paws, Claws, and Quiz-tastic Tails!"</h1>
+          <p>
+            Test your animal knowledge and see if you’re the king of the jungle
+            or just horsing around!
+          </p>
+          <button id="start-btn" class="start-btn">Start Quiz</button>
+        </section>
+        <!-- Quiz Section -->
+        <section
+          id="question-section"
+          class="question-section"
+          style="display: none"
+        >
+          <div id="question-container" class="question-container">
+            <!-- Question will be loaded here -->
+          </div>
+          <div id="answers-container" class="answers-container">
+            <!-- Answer buttons will be loaded here -->
+          </div>
+          <button id="next-btn" class="next-btn" style="display: none">
+            Next Question
+          </button>
+          <button id="submit-btn" class="submit-btn" style="display: none">
+            Submit Quiz
+          </button>
+        </section>
+        <!-- Score Section -->
+        <section id="score-section" class="score-section" style="display: none">
+          <h2>Your Results</h2>
+          <div id="score-summary"></div>
+          <button id="restart-btn" class="restart-btn">Restart Quiz</button>
+        </section>
+      </div>
+    </main>
+    <script src="CodeQuest.js"></script>
+  </body>
+</html>
